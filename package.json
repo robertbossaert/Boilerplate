@@ -1,0 +1,40 @@
+{
+  "name": "boilerplate",
+  "description": "a gulp boilerplate to get started quickly on front-end projects",
+  "author": "Robert Bossaert (https://robertbossaert.com)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertbossaert/Boilerplate"
+  },
+  "scripts": {
+    "init": "npm install",
+    "dev": "gulp dev",
+    "dist": "gulp dist"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.9.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.9.0",
+    "browser-sync": "^2.11.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "~1.6.0",
+    "gulp-watch": "^4.3.6",
+    "gulp-zip": "^3.2.0",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.1"
+  }
+}
