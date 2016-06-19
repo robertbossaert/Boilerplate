@@ -44,7 +44,7 @@ Tasks are placed inside the ./tasks folders and are imported in gulpfile.babel.j
 
 ## Troubleshooting
 
-1. SyntaxError: Use of const in strict mode.
+* SyntaxError: Use of const in strict mode.
     
     > Make sure you are on node >=4 (run node -v)
 
