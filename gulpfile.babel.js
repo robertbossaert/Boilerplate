@@ -2,8 +2,9 @@ import 'babel-polyfill';
 import gulp from 'gulp';
 import runSequence from 'run-sequence';
 
+// Get the Gulp tasks
 const requireDir = require('require-dir');
-requireDir('./gulp-tasks', { recurse: true });
+requireDir('./gulp/tasks', { recurse: true });
 
 // Main tasks
 gulp.task('dev', () => runSequence('clean', 'browsersync:src', 'assets', 'assets-watch'));
