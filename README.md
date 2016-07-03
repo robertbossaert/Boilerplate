@@ -1,5 +1,7 @@
 # Boilerplate
 
+--- Not ready for usage, currently changing stuff around! ---
+
 A Front-end boilerplate containing ES6, Gulp, BrowserSync, Pug (Jade), JShint and a few other optimization tools.
 The project is split into two parts, there is a Jekyll folder for static Jekyll websites and a default folder for all the other projects.
 Other than a few folder differences and a Jekyll deploy task for Github pages, they are much the same.
