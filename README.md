@@ -45,7 +45,7 @@ Other than a few folder differences and a Jekyll deploy task for Github pages, t
 ### Jekyll
 1. Clean - deletes the dist folder > ```gulp clean```
 2. Watch - starts Jekyll, watch for file changes and then builds the files > ```gulp watch```
-3. Build - publish a post > ```gulp build```
+3. Build - builds the files > ```gulp build```
 4. Deploy - deploys your website to Github pages(1) > ```gulp deploy```
 
 (1) Assumes the current working directory is a git repository and uses its remote url. If this is not the case you could set up a remoteUrl.
