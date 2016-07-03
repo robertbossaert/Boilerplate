@@ -10,15 +10,12 @@ const dir = {
 module.exports = {
 
     browsersync: {
+        port: 4000,
         src: {
-            server: {
-                baseDir: dir.src
-            }
+            base: dir.src
         },
         dist: {
-            server: {
-                baseDir: dir.dist
-            }
+            base: dir.dist
         }
     },
     
@@ -81,11 +78,11 @@ module.exports = {
 
     jekyll: {
         src: {
-            base: dir.src + '/assets/js/**/*.js',
+            base: dir.src,
             config: '_config.yml'
         },
         dist: {
-            base: dir.dist + '/assets/js',
+            base: dir.dist,
             config: ['_config.yml', '_config.dist.yml']
         }  
     },
@@ -100,7 +97,12 @@ module.exports = {
     },
 
     path: {
-        html:  dir.src + '/html/**/*.jade',
+        jekyll:  [
+            dir.src + '/*.html',
+            dir.src + '/_includes/**/*.html',
+            dir.src + '/_layouts/**/*.html',
+            dir.src + '/_posts/**/*.html',
+        ],
         js: dir.src + '/assets/js/**/*.js',
         css: dir.src + '/assets/sass/**/*.scss',
         fonts: dir.src + '/assets/fonts/**/*.{eot,ttf,svg,woff,woff2}',

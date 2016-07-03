@@ -10,15 +10,12 @@ const dir = {
 module.exports = {
 
     browsersync: {
+        port: 4000,
         src: {
-            server: {
-                baseDir: dir.src
-            }
+            base: dir.src
         },
         dist: {
-            server: {
-                baseDir: dir.dist
-            }
+            base: dir.dist
         }
     },
     

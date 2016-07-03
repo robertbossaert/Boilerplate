@@ -6,11 +6,23 @@ import { errorHandler } from '../util/handleError';
 class BrowserSync {
 
     static src() {
-        browsersync(config.src)
+        browsersync({
+            files: [config.src.base + '/**'],
+            port: config.port,
+            server: {
+                baseDir: config.src.base
+            }
+        });
     }
 
     static dist() {
-        browsersync(config.dist)
+        browsersync({
+            files: [config.dist.base + '/**'],
+            port: config.port,
+            server: {
+                baseDir: config.dist.base
+            }
+        });
     }
 }
 
