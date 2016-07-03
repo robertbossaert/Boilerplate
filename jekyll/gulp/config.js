@@ -97,6 +97,11 @@ module.exports = {
     },
 
     path: {
+        jekyll: [
+            dir.src + '/*.html',
+            dir.src + '/_includes/*',
+            dir.src + '/_layouts/*'
+        ],
         html: dir.src + '/_pugfiles/**/*.pug',
         js: dir.src + '/assets/js/**/*.js',
         css: dir.src + '/assets/sass/**/*.scss',
