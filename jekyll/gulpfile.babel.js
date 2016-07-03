@@ -27,7 +27,7 @@ gulp.task('build', ['images:build', 'js:build', 'style:build', 'html:build', 'fo
 gulp.task('watch', ['jekyll:build', 'browsersync:dist'], () => {
     gulp.watch(config.path.js, ['js:build']);
     gulp.watch(config.path.css, ['style:build']);
-    gulp.watch(config.path.jekyll, ['html:build']);
+    gulp.watch(config.path.html, ['html:build']);
     gulp.watch(config.path.fonts, ['fonts:build']);
     gulp.watch(config.path.images, ['images:build']);
 });

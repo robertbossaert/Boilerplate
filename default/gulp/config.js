@@ -48,7 +48,7 @@ module.exports = {
 
     html: {
         src: {
-            base: dir.src + '/html/**/*.jade'
+            base: dir.src + '/html/**/*.pug'
         },
         dist: {
             base: dir.dist + '/html'
@@ -74,7 +74,7 @@ module.exports = {
     },
 
     path: {
-        html:  dir.src + '/html/**/*.jade',
+        html:  dir.src + '/html/**/*.pug',
         js: dir.src + '/assets/js/**/*.js',
         css: dir.src + '/assets/sass/**/*.scss',
         fonts: dir.src + '/assets/fonts/**/*.{eot,ttf,svg,woff,woff2}',

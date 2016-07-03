@@ -12,8 +12,8 @@ class Html {
 
         return gulp.src(config.src.base)
             .pipe($.plumber({errorHandler: errorHandler}))
-            .pipe($.jade({pretty: true}))
-            .pipe(gulp.dest(config.dist.base));
+            .pipe($.pug({pretty: true}))
+            .pipe(gulp.dest(config.dest.base));
     }
 }
 

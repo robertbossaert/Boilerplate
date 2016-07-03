@@ -60,10 +60,10 @@ module.exports = {
 
     html: {
         src: {
-            base: dir.src + '/html/**/*.jade'
+            base: dir.src + '/_pugfiles/*.pug'
         },
-        dist: {
-            base: dir.dist + '/html'
+        dest: {
+            base: dir.src + '/_includes'
         }  
     },
 
@@ -97,12 +97,7 @@ module.exports = {
     },
 
     path: {
-        jekyll:  [
-            dir.src + '/*.html',
-            dir.src + '/_includes/**/*.html',
-            dir.src + '/_layouts/**/*.html',
-            dir.src + '/_posts/**/*.html',
-        ],
+        html: dir.src + '/_pugfiles/**/*.pug',
         js: dir.src + '/assets/js/**/*.js',
         css: dir.src + '/assets/sass/**/*.scss',
         fonts: dir.src + '/assets/fonts/**/*.{eot,ttf,svg,woff,woff2}',
