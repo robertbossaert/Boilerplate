@@ -51,7 +51,8 @@ Other than a few folder differences and a Jekyll deploy task for Github pages, t
 ## Future changes
 
 1. Webpack
-2. Additional tasks
+2. Sprite task ?
+3. Other tasks
 
 ## Troubleshooting
 
